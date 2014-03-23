@@ -1,4 +1,4 @@
-package services.cache;
+package lib.cache;
 
 /**
  * Created by gx on 23/03/14.

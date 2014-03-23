@@ -1,6 +1,7 @@
 package services.cache;
 
 import junit.framework.TestCase;
+import lib.cache.HashCache;
 
 /**
  * Created by gx on 23/03/14.

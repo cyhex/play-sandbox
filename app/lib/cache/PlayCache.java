@@ -1,4 +1,4 @@
-package services.cache;
+package lib.cache;
 
 
 import com.google.inject.Singleton;

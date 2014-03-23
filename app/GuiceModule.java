@@ -1,8 +1,8 @@
 import com.google.inject.AbstractModule;
 import com.google.inject.Provider;
 import play.mvc.Http;
-import services.cache.CacheInterface;
-import services.cache.PlayCache;
+import lib.cache.CacheInterface;
+import lib.cache.PlayCache;
 
 public class GuiceModule extends AbstractModule {
 

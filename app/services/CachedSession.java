@@ -2,7 +2,7 @@ package services;
 
 import com.google.inject.Inject;
 import play.mvc.Http;
-import services.cache.CacheInterface;
+import lib.cache.CacheInterface;
 
 import java.util.UUID;
 

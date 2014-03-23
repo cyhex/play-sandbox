@@ -3,7 +3,7 @@ package services;
 import junit.framework.TestCase;
 import play.api.mvc.RequestHeader;
 import play.mvc.Http;
-import services.cache.HashCache;
+import lib.cache.HashCache;
 
 import java.util.Collections;
 import java.util.Map;
