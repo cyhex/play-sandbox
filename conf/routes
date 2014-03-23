@@ -9,7 +9,7 @@ GET        /json                controllers.JsonController.index()
 
 GET        /d/:action           controllers.DynamicController.dispatch(action: String)
 
-GET        /di         @controllers.DiController.test()
+GET        /di        @controllers.DiController.test()
 GET        /di2        @controllers.DiController.test2()
 
 # Map static resources from the /public folder to the /assets URL path

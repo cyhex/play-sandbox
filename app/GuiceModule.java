@@ -1,23 +1,23 @@
 import com.google.inject.AbstractModule;
+import com.google.inject.Provider;
+import play.mvc.Http;
+import services.cache.CacheInterface;
+import services.cache.PlayCache;
 
 public class GuiceModule extends AbstractModule {
 
     @Override
     protected void configure() {
 
-      /*
-      * Adding just one class  - not needed as its done by Guice Convention
-      * bind(MyService.class);
-      */
+    bind(CacheInterface.class).to(PlayCache.class);
 
-     /*
-      * Bind Interface to Implementation
-      *
-      * This tells Guice that whenever it sees a dependency on a TransactionLog,
-      * it should satisfy the dependency using a DatabaseTransactionLog.
-      *
-      * bind(TransactionLog.class).to(DatabaseTransactionLog.class);
-      */
+    // Bind Play Http.Context
+    bind(Http.Context.class).toProvider(new Provider<Http.Context>() {
+        @Override
+        public Http.Context get() {
+            return Http.Context.current();
+        }
+    });
 
     }
 }
