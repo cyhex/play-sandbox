@@ -15,7 +15,7 @@ public class Global extends GlobalSettings {
 
     @Override
     public void onStart(Application app) {
-        this.injector = Guice.createInjector(new DiModule());
+        this.injector = Guice.createInjector(new GuiceModule());
     }
 
 }
